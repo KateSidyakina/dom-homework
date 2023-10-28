@@ -1,7 +1,9 @@
+import gnomePNG from "../img/goblin.png";
+
 const board = document.querySelector(".game-container");
 const gnome = document.createElement("img");
 gnome.id = "gnome";
-gnome.src = "img/goblin.png";
+gnome.src = gnomePNG;
 
 export function getRandomPosition() {
   const row = Math.floor(Math.random() * 4);
